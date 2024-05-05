@@ -14,6 +14,14 @@
 		A9E4770D2BE7189700592DF3 /* iShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4770C2BE7189700592DF3 /* iShopTests.swift */; };
 		A9E477172BE7189700592DF3 /* iShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E477162BE7189700592DF3 /* iShopUITests.swift */; };
 		A9E477192BE7189700592DF3 /* iShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E477182BE7189700592DF3 /* iShopUITestsLaunchTests.swift */; };
+		A9E4772F2BE727E100592DF3 /* iShopAuth.docc in Sources */ = {isa = PBXBuildFile; fileRef = A9E4772E2BE727E100592DF3 /* iShopAuth.docc */; };
+		A9E477352BE727E100592DF3 /* iShopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E4772B2BE727E100592DF3 /* iShopAuth.framework */; };
+		A9E4773C2BE727E100592DF3 /* iShopAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4773B2BE727E100592DF3 /* iShopAuthTests.swift */; };
+		A9E4773D2BE727E100592DF3 /* iShopAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E4772D2BE727E100592DF3 /* iShopAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E477402BE727E100592DF3 /* iShopAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E4772B2BE727E100592DF3 /* iShopAuth.framework */; };
+		A9E477412BE727E100592DF3 /* iShopAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9E4772B2BE727E100592DF3 /* iShopAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9E4774C2BE7296700592DF3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9E4774B2BE7296700592DF3 /* Alamofire */; };
+		A9E477512BE72AEF00592DF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,42 @@
 			remoteGlobalIDString = A9E476F72BE7189600592DF3;
 			remoteInfo = iShop;
 		};
+		A9E477362BE727E100592DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9E476F02BE7189600592DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E4772A2BE727E100592DF3;
+			remoteInfo = iShopAuth;
+		};
+		A9E477382BE727E100592DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9E476F02BE7189600592DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E476F72BE7189600592DF3;
+			remoteInfo = iShop;
+		};
+		A9E4773E2BE727E100592DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9E476F02BE7189600592DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E4772A2BE727E100592DF3;
+			remoteInfo = iShopAuth;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9E477452BE727E100592DF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9E477412BE727E100592DF3 /* iShopAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A9E476F82BE7189600592DF3 /* iShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +87,12 @@
 		A9E477122BE7189700592DF3 /* iShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E477162BE7189700592DF3 /* iShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShopUITests.swift; sourceTree = "<group>"; };
 		A9E477182BE7189700592DF3 /* iShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9E4772B2BE727E100592DF3 /* iShopAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iShopAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E4772D2BE727E100592DF3 /* iShopAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iShopAuth.h; sourceTree = "<group>"; };
+		A9E4772E2BE727E100592DF3 /* iShopAuth.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = iShopAuth.docc; sourceTree = "<group>"; };
+		A9E477342BE727E100592DF3 /* iShopAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShopAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E4773B2BE727E100592DF3 /* iShopAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShopAuthTests.swift; sourceTree = "<group>"; };
+		A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E477402BE727E100592DF3 /* iShopAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +118,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9E477282BE727E100592DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E4774C2BE7296700592DF3 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E477312BE727E100592DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E477352BE727E100592DF3 /* iShopAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +143,10 @@
 				A9E476FA2BE7189600592DF3 /* iShop */,
 				A9E4770B2BE7189700592DF3 /* iShopTests */,
 				A9E477152BE7189700592DF3 /* iShopUITests */,
+				A9E4772C2BE727E100592DF3 /* iShopAuth */,
+				A9E4773A2BE727E100592DF3 /* iShopAuthTests */,
 				A9E476F92BE7189600592DF3 /* Products */,
+				A9E4774A2BE7296700592DF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +156,8 @@
 				A9E476F82BE7189600592DF3 /* iShop.app */,
 				A9E477082BE7189700592DF3 /* iShopTests.xctest */,
 				A9E477122BE7189700592DF3 /* iShopUITests.xctest */,
+				A9E4772B2BE727E100592DF3 /* iShopAuth.framework */,
+				A9E477342BE727E100592DF3 /* iShopAuthTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +165,7 @@
 		A9E476FA2BE7189600592DF3 /* iShop */ = {
 			isa = PBXGroup;
 			children = (
+				A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */,
 				A9E476FB2BE7189600592DF3 /* iShopApp.swift */,
 				A9E476FD2BE7189600592DF3 /* ContentView.swift */,
 				A9E476FF2BE7189700592DF3 /* Assets.xcassets */,
@@ -127,7 +199,42 @@
 			path = iShopUITests;
 			sourceTree = "<group>";
 		};
+		A9E4772C2BE727E100592DF3 /* iShopAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A9E4772D2BE727E100592DF3 /* iShopAuth.h */,
+				A9E4772E2BE727E100592DF3 /* iShopAuth.docc */,
+			);
+			path = iShopAuth;
+			sourceTree = "<group>";
+		};
+		A9E4773A2BE727E100592DF3 /* iShopAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9E4773B2BE727E100592DF3 /* iShopAuthTests.swift */,
+			);
+			path = iShopAuthTests;
+			sourceTree = "<group>";
+		};
+		A9E4774A2BE7296700592DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9E477262BE727E100592DF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E4773D2BE727E100592DF3 /* iShopAuth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A9E476F72BE7189600592DF3 /* iShop */ = {
@@ -137,10 +244,12 @@
 				A9E476F42BE7189600592DF3 /* Sources */,
 				A9E476F52BE7189600592DF3 /* Frameworks */,
 				A9E476F62BE7189600592DF3 /* Resources */,
+				A9E477452BE727E100592DF3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9E4773F2BE727E100592DF3 /* PBXTargetDependency */,
 			);
 			name = iShop;
 			productName = iShop;
@@ -183,6 +292,46 @@
 			productReference = A9E477122BE7189700592DF3 /* iShopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A9E4772A2BE727E100592DF3 /* iShopAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E477422BE727E100592DF3 /* Build configuration list for PBXNativeTarget "iShopAuth" */;
+			buildPhases = (
+				A9E477262BE727E100592DF3 /* Headers */,
+				A9E477272BE727E100592DF3 /* Sources */,
+				A9E477282BE727E100592DF3 /* Frameworks */,
+				A9E477292BE727E100592DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iShopAuth;
+			packageProductDependencies = (
+				A9E4774B2BE7296700592DF3 /* Alamofire */,
+			);
+			productName = iShopAuth;
+			productReference = A9E4772B2BE727E100592DF3 /* iShopAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9E477332BE727E100592DF3 /* iShopAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E477462BE727E100592DF3 /* Build configuration list for PBXNativeTarget "iShopAuthTests" */;
+			buildPhases = (
+				A9E477302BE727E100592DF3 /* Sources */,
+				A9E477312BE727E100592DF3 /* Frameworks */,
+				A9E477322BE727E100592DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9E477372BE727E100592DF3 /* PBXTargetDependency */,
+				A9E477392BE727E100592DF3 /* PBXTargetDependency */,
+			);
+			name = iShopAuthTests;
+			productName = iShopAuthTests;
+			productReference = A9E477342BE727E100592DF3 /* iShopAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +353,13 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = A9E476F72BE7189600592DF3;
 					};
+					A9E4772A2BE727E100592DF3 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A9E477332BE727E100592DF3 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A9E476F72BE7189600592DF3;
+					};
 				};
 			};
 			buildConfigurationList = A9E476F32BE7189600592DF3 /* Build configuration list for PBXProject "iShop" */;
@@ -215,6 +371,10 @@
 				Base,
 			);
 			mainGroup = A9E476EF2BE7189600592DF3;
+			packageReferences = (
+				A9E477492BE7290800592DF3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A9E477522BE72B5E00592DF3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A9E476F92BE7189600592DF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +382,8 @@
 				A9E476F72BE7189600592DF3 /* iShop */,
 				A9E477072BE7189700592DF3 /* iShopTests */,
 				A9E477112BE7189700592DF3 /* iShopUITests */,
+				A9E4772A2BE727E100592DF3 /* iShopAuth */,
+				A9E477332BE727E100592DF3 /* iShopAuthTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +395,7 @@
 			files = (
 				A9E477032BE7189700592DF3 /* Preview Assets.xcassets in Resources */,
 				A9E477002BE7189700592DF3 /* Assets.xcassets in Resources */,
+				A9E477512BE72AEF00592DF3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +407,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A9E477102BE7189700592DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E477292BE727E100592DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E477322BE727E100592DF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +456,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9E477272BE727E100592DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E4772F2BE727E100592DF3 /* iShopAuth.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E477302BE727E100592DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E4773C2BE727E100592DF3 /* iShopAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +484,21 @@
 			isa = PBXTargetDependency;
 			target = A9E476F72BE7189600592DF3 /* iShop */;
 			targetProxy = A9E477132BE7189700592DF3 /* PBXContainerItemProxy */;
+		};
+		A9E477372BE727E100592DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9E4772A2BE727E100592DF3 /* iShopAuth */;
+			targetProxy = A9E477362BE727E100592DF3 /* PBXContainerItemProxy */;
+		};
+		A9E477392BE727E100592DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9E476F72BE7189600592DF3 /* iShop */;
+			targetProxy = A9E477382BE727E100592DF3 /* PBXContainerItemProxy */;
+		};
+		A9E4773F2BE727E100592DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9E4772A2BE727E100592DF3 /* iShopAuth */;
+			targetProxy = A9E4773E2BE727E100592DF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,6 +758,108 @@
 			};
 			name = Release;
 		};
+		A9E477432BE727E100592DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShopAuth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9E477442BE727E100592DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShopAuth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9E477472BE727E100592DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShopAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iShop";
+			};
+			name = Debug;
+		};
+		A9E477482BE727E100592DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShopAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iShop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,7 +899,52 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A9E477422BE727E100592DF3 /* Build configuration list for PBXNativeTarget "iShopAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E477432BE727E100592DF3 /* Debug */,
+				A9E477442BE727E100592DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E477462BE727E100592DF3 /* Build configuration list for PBXNativeTarget "iShopAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E477472BE727E100592DF3 /* Debug */,
+				A9E477482BE727E100592DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9E477492BE7290800592DF3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		A9E477522BE72B5E00592DF3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9E4774B2BE7296700592DF3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9E477492BE7290800592DF3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9E476F02BE7189600592DF3 /* Project object */;
 }
