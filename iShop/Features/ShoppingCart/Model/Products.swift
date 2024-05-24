@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Products: Decodable {
+    let products: [Product]
+}

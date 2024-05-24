@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum FieldType: String {
+    case UserName
+    case Password
+}

@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct ItemDetailView: View {
+    var title: String
+    var category: String
+    var image: String
+    var price: Int
+    var description: String
+    
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
-                    Image("ishop")
-                        .resizable()
-                        .frame(width: 250, height: 250)
+                    AsyncImage(url: URL(string: image)) { value in
+                        value.image?.resizable()
+                    }
+                    .frame(width: 250, height: 250)
+                    .aspectRatio(contentMode: .fit)
                     
                     VStack  {
-                        Text("Mika Chair")
+                        Text(title)
                             .bold()
                         
                         Divider()
@@ -26,7 +34,7 @@ struct ItemDetailView: View {
                             .bold()
                             .foregroundColor(Color("customPrimary"))
                         
-                        Text("Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500")
+                        Text(description)
                         
                         Divider()
                         
@@ -37,7 +45,7 @@ struct ItemDetailView: View {
                                 	
                             }
                             
-                            Text("$39.99")
+                            Text("$\(price)")
                         }
                         .padding()
                         .foregroundStyle(.white)
@@ -47,11 +55,11 @@ struct ItemDetailView: View {
                     .padding()
                 }
             }
-            .navigationTitle("Mika Chair")
+            .navigationTitle(Text(title))
         }
     }
 }
 
 #Preview {
-    ItemDetailView()
+    ItemDetailView(title: "", category: "", image: "", price: 0, description: "")
 }

@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct TextFieldDetail: View {
+    @State var label: String = ""
+    @State var textField: String = ""
+    @State var fieldType: FieldType?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            if fieldType == FieldType.UserName {
+                TextField(label, text: $textField)
+                Image(systemName: "person")
+                
+            } else {
+                SecureField(label, text: $textField)
+                Image(systemName: "eye")
+            }
+        }
+        .padding()
+        .bold()
+        .foregroundColor(Color("customPrimary"))
+        .background(.black.opacity(0.05))
+        .clipShape(Capsule())
     }
 }
+
 
 #Preview {
     TextFieldDetail()

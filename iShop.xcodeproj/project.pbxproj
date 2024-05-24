@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A95818B62BEB07B4003689AF /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95818B52BEB07B4003689AF /* ItemView.swift */; };
+		A95818B82BEB08B2003689AF /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95818B72BEB08B2003689AF /* ItemDetailView.swift */; };
+		A96EE27B2BF14C6500D06F6D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EE27A2BF14C6500D06F6D /* Product.swift */; };
+		A96EE27D2BF1812500D06F6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EE27C2BF1812500D06F6D /* Category.swift */; };
+		A96EE2802BF1875900D06F6D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EE27F2BF1875900D06F6D /* NetworkManager.swift */; };
+		A9D0D54A2BE9DD06005FA328 /* TextFieldDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0D5492BE9DD06005FA328 /* TextFieldDetail.swift */; };
+		A9D0D54C2BE9DD9D005FA328 /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0D54B2BE9DD9D005FA328 /* FieldType.swift */; };
+		A9D0D5512BE9DF2F005FA328 /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0D5502BE9DF2F005FA328 /* ShoppingCartView.swift */; };
 		A9E476FC2BE7189600592DF3 /* iShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E476FB2BE7189600592DF3 /* iShopApp.swift */; };
 		A9E476FE2BE7189600592DF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E476FD2BE7189600592DF3 /* ContentView.swift */; };
 		A9E477002BE7189700592DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E476FF2BE7189700592DF3 /* Assets.xcassets */; };
@@ -22,6 +30,9 @@
 		A9E477412BE727E100592DF3 /* iShopAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9E4772B2BE727E100592DF3 /* iShopAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9E4774C2BE7296700592DF3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9E4774B2BE7296700592DF3 /* Alamofire */; };
 		A9E477512BE72AEF00592DF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */; };
+		A9E477572BE7321900592DF3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E477562BE7321900592DF3 /* SignInView.swift */; };
+		A9E477592BE73F8E00592DF3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9E477582BE73F8E00592DF3 /* FirebaseAuth */; };
+		A9E4775B2BE73F9300592DF3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9E4775A2BE73F9300592DF3 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +88,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A95818B52BEB07B4003689AF /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		A95818B72BEB08B2003689AF /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		A96EE27A2BF14C6500D06F6D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A96EE27C2BF1812500D06F6D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A96EE27F2BF1875900D06F6D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A9D0D5492BE9DD06005FA328 /* TextFieldDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDetail.swift; sourceTree = "<group>"; };
+		A9D0D54B2BE9DD9D005FA328 /* FieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldType.swift; sourceTree = "<group>"; };
+		A9D0D5502BE9DF2F005FA328 /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
 		A9E476F82BE7189600592DF3 /* iShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E476FB2BE7189600592DF3 /* iShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShopApp.swift; sourceTree = "<group>"; };
 		A9E476FD2BE7189600592DF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +112,7 @@
 		A9E477342BE727E100592DF3 /* iShopAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShopAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4773B2BE727E100592DF3 /* iShopAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShopAuthTests.swift; sourceTree = "<group>"; };
 		A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9E477562BE7321900592DF3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +120,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E4775B2BE73F9300592DF3 /* FirebaseDatabase in Frameworks */,
 				A9E477402BE727E100592DF3 /* iShopAuth.framework in Frameworks */,
+				A9E477592BE73F8E00592DF3 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +159,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A96EE2772BF14C3200D06F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A96EE27A2BF14C6500D06F6D /* Product.swift */,
+				A96EE27C2BF1812500D06F6D /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A96EE2782BF14C3E00D06F6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0D5502BE9DF2F005FA328 /* ShoppingCartView.swift */,
+				A95818B52BEB07B4003689AF /* ItemView.swift */,
+				A95818B72BEB08B2003689AF /* ItemDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A96EE2792BF14C4C00D06F6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A96EE27F2BF1875900D06F6D /* NetworkManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A96EE27E2BF184E000D06F6D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A9D0D54D2BE9DEFB005FA328 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				A96EE2792BF14C4C00D06F6D /* ViewModel */,
+				A96EE2782BF14C3E00D06F6D /* View */,
+				A96EE2772BF14C3200D06F6D /* Model */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
 		A9E476EF2BE7189600592DF3 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +231,7 @@
 		A9E476FA2BE7189600592DF3 /* iShop */ = {
 			isa = PBXGroup;
 			children = (
+				A9E477532BE731C500592DF3 /* Features */,
 				A9E477502BE72AEF00592DF3 /* GoogleService-Info.plist */,
 				A9E476FB2BE7189600592DF3 /* iShopApp.swift */,
 				A9E476FD2BE7189600592DF3 /* ContentView.swift */,
@@ -223,6 +290,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A9E477532BE731C500592DF3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A96EE27E2BF184E000D06F6D /* Service */,
+				A9D0D54D2BE9DEFB005FA328 /* ShoppingCart */,
+				A9E477542BE731E500592DF3 /* Auth */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A9E477542BE731E500592DF3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A9E477552BE731F200592DF3 /* SignIn */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A9E477552BE731F200592DF3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A9E477562BE7321900592DF3 /* SignInView.swift */,
+				A9D0D5492BE9DD06005FA328 /* TextFieldDetail.swift */,
+				A9D0D54B2BE9DD9D005FA328 /* FieldType.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -252,6 +347,10 @@
 				A9E4773F2BE727E100592DF3 /* PBXTargetDependency */,
 			);
 			name = iShop;
+			packageProductDependencies = (
+				A9E477582BE73F8E00592DF3 /* FirebaseAuth */,
+				A9E4775A2BE73F9300592DF3 /* FirebaseDatabase */,
+			);
 			productName = iShop;
 			productReference = A9E476F82BE7189600592DF3 /* iShop.app */;
 			productType = "com.apple.product-type.application";
@@ -434,7 +533,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D0D54A2BE9DD06005FA328 /* TextFieldDetail.swift in Sources */,
+				A96EE27D2BF1812500D06F6D /* Category.swift in Sources */,
+				A9D0D54C2BE9DD9D005FA328 /* FieldType.swift in Sources */,
+				A96EE27B2BF14C6500D06F6D /* Product.swift in Sources */,
+				A96EE2802BF1875900D06F6D /* NetworkManager.swift in Sources */,
+				A95818B62BEB07B4003689AF /* ItemView.swift in Sources */,
+				A9E477572BE7321900592DF3 /* SignInView.swift in Sources */,
+				A95818B82BEB08B2003689AF /* ItemDetailView.swift in Sources */,
 				A9E476FE2BE7189600592DF3 /* ContentView.swift in Sources */,
+				A9D0D5512BE9DF2F005FA328 /* ShoppingCartView.swift in Sources */,
 				A9E476FC2BE7189600592DF3 /* iShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,7 +750,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.ishop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -674,7 +782,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.iShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grodriguez.ishop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -943,6 +1051,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A9E477492BE7290800592DF3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		A9E477582BE73F8E00592DF3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9E477522BE72B5E00592DF3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A9E4775A2BE73F9300592DF3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9E477522BE72B5E00592DF3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

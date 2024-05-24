@@ -15,7 +15,7 @@ class NetworkManager: ObservableObject {
     
     func getAllProducts() {
         AF.request(
-            "\(baseUrl)/products", 
+            "\(baseUrl)products",
             method: .get
         ).responseDecodable(of: [Product].self) { response in
             print(response)
